@@ -1,0 +1,1 @@
+import{r as t}from"./index-Cyxn5c8Z.js";function a(r,e=3e4){const u=t.useRef(null),[c,o]=t.useState(e/1e3);return t.useEffect(()=>{r()},[]),t.useEffect(()=>{u.current=setInterval(()=>{r(),o(e/1e3)},e);const s=setInterval(()=>{o(n=>n<=1?e/1e3:n-1)},1e3);return()=>{clearInterval(u.current),clearInterval(s)}},[r,e]),{countdown:c}}export{a as u};
